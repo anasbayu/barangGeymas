@@ -17,11 +17,15 @@
    if($exec->rowCount() > 0)
    {
       $_SESSION['username'] = $data['nama_user'];
-      header('location: ../homepage.php');
+      if($data['nama_user'] == $admin)
+      {
+            $_SESSION['admin'] = true;
+      }
+      header('location: ../index.php');
    }
    else
    {
       echo "gagal login";
-      header('location: ../loginView.php');
+      header('location: ../loginForm.php');
    }
 ?>

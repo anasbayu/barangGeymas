@@ -17,5 +17,6 @@
    </head>
    <body>
       <span>Selamat datang </span><?php echo $_SESSION['username']?>
+      <p>Hello</p>
    </body>
 </html>

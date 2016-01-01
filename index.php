@@ -12,10 +12,22 @@
 
       <table>
          <tr>
-            <td>no</td>
+            <td>id barang</td>
             <td>nama barang</td>
             <td>status</td>
          </tr>
+         <?php
+            $query = "SELECT * FROM barang";
+
+            foreach($conn->query($query) as $barang)
+            {
+               echo "
+                  <td>$barang[0]</td>
+                  <td>$barang[1]</td>
+                  <td>status</td>
+               ";
+            }
+         ?>
       </table>
    </body>
 </html>

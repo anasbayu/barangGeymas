@@ -36,7 +36,13 @@
                }
                else
                {
-                  echo "<td><a href='editForm.php?nama_barang=$barang[1]&status_barang=$barang[3]&id_barang=$barang[0]'>edit</a></td>";
+                  echo "
+                  <td>
+                     <a href='editForm.php?nama_barang=$barang[1]&status_barang=$barang[3]&id_barang=$barang[0]'>
+                     edit</a> |
+                     <a href='logic/hapus.php?id_barang=$barang[0]'>Hapus</a>
+                  </td>
+                  ";
                }
                echo "</tr>";
             }

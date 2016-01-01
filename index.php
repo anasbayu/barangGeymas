@@ -2,6 +2,7 @@
 <?php
    include "include/koneksi.php";
    include "include/header.php";
+   include "include/auth.php";
 ?>
 <html>
    <head>
@@ -10,22 +11,34 @@
    <body>
       <span>Selamat datang </span><?php echo $_SESSION['username']?><br>
 
-      <table>
+      <table border="1px">
          <tr>
-            <td>id barang</td>
-            <td>nama barang</td>
-            <td>status</td>
+            <td>Id barang</td>
+            <td>Nama barang</td>
+            <td>Status</td>
+            <td>Aksi</td>
          </tr>
          <?php
-            $query = "SELECT * FROM barang";
+            $query = "SELECT barang.id_barang, barang.nama_barang, status.nama_status, barang.id_status FROM barang JOIN status ON (barang.id_status = status.id_status) ORDER BY barang.id_barang";
 
             foreach($conn->query($query) as $barang)
             {
                echo "
-                  <td>$barang[0]</td>
-                  <td>$barang[1]</td>
-                  <td>status</td>
+               <tr>
+                     <td>$barang[0]</td>
+                     <td>$barang[1]</td>
+                     <td>$barang[2]</td>
                ";
+
+               if(!isset($_SESSION['admin']))
+               {
+                  echo "<td><a href='logic/pinjam.php?id_barang=$barang[0]'>pinjam</a></td>";
+               }
+               else
+               {
+                  echo "<td><a href='editForm.php?nama_barang=$barang[1]&status_barang=$barang[3]&id_barang=$barang[0]'>edit</a></td>";
+               }
+               echo "</tr>";
             }
          ?>
       </table>

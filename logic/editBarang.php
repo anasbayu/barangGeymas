@@ -2,9 +2,11 @@
    include "../include/koneksi.php";
    include "../include/auth.php";
 
+   $idBarang = $_POST['id_barang'];
    $namaBarang = $_POST['nama_barang'];
+   $idStatus = $_POST['id_status'];
 
-   $query = "INSERT INTO barang (nama_barang, id_status) VALUE ('$namaBarang', 1)";
+   $query = "UPDATE barang SET nama_barang = '$namaBarang', id_status = '$idStatus' WHERE id_barang = '$idBarang'";
 
    $exec = $conn->prepare($query);
    $exec->bindparam(":nama_barang", $username);

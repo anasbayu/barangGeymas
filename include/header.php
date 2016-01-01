@@ -1,13 +1,3 @@
-<?php
-   session_start();
-   // include "koneksi.php";
-
-   if(!isset($_SESSION['username']))
-   {
-      header('location: loginForm.php');
-   }
-?>
-
 <header>
    <ul>
       <li><a href="">profil</a></li>

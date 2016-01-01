@@ -2,6 +2,7 @@
 <?php
    include "include/koneksi.php";
    include "include/header.php";
+   include "include/auth.php";
 ?>
 <html>
    <head>

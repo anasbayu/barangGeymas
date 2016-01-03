@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <?php
    include "include/koneksi.php";
-   include "include/header.php";
    include "include/auth.php";
+   include "include/header.php";
 ?>
 <html>
    <head>

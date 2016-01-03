@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <?php
    include "include/koneksi.php";
-   include "include/header.php";
    include "include/auth.php";
+   include "include/header.php";
 ?>
 <html>
    <head>
@@ -41,8 +41,14 @@
                      <a href='editForm.php?nama_barang=$barang[1]&status_barang=$barang[3]&id_barang=$barang[0]'>
                      edit</a> |
                      <a href='logic/hapus.php?id_barang=$barang[0]'>Hapus</a>
-                  </td>
                   ";
+
+                  if($barang[3] == 3)
+                  {
+                     echo " | <a href='logic/setujui.php?id_barang=$barang[0]&id_status=2'>Setujui</a>
+                     | <a href='logic/setujui.php?id_barang=$barang[0]&id_status=1'>Tolak</a>";
+                  }
+                  echo "</td>";
                }
                echo "</tr>";
             }

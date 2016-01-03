@@ -11,5 +11,6 @@
          <input type="password" maxlength="25" placeholder="password" name="password" required/><br>
          <button>Masuk</button>
       </form>
+      <span>Belum punya akun? <b><a href="registerForm.php">daftar sekarang!</a></n></span>
    </body>
 </html>

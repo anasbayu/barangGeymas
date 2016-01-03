@@ -2,8 +2,17 @@
    session_start();
    include "../include/koneksi.php";
 
-   $username = $_POST['username'];
-   $password = $_POST['password'];
+   $reg = $_GET['reg'];
+   if(isset($reg))
+   {
+      $username = $_GET['username'];
+      $password = $_GET['password'];
+   }
+   else
+   {
+      $username = $_POST['username'];
+      $password = $_POST['password'];
+   }
 
    $query = "SELECT * FROM users WHERE nama_user = '$username' AND password = '$password'";
 

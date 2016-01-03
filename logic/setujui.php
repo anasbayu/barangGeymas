@@ -10,5 +10,22 @@
    $exec = $conn->prepare($query);
    $exec->execute();
 
+   // jika ditolak.
+   if($id_status == 1)
+   {
+      $query = "DELETE FROM transaksi WHERE id_barang = '$id_barang'";
+
+      $exec = $conn->prepare($query);
+      $exec->execute();
+   }
+   // Jika disetuji.
+   else
+   {
+      $query = "UPDATE transaksi SET id_status = '$id_status' WHERE id_barang = '$id_barang'";
+
+      $exec = $conn->prepare($query);
+      $exec->execute();
+   }
+
    header('location: ../index.php');
 ?>

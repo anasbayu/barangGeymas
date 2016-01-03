@@ -32,7 +32,10 @@
 
                if(!isset($_SESSION['admin']))
                {
-                  echo "<td><a href='logic/pinjam.php?id_barang=$barang[0]'>pinjam</a></td>";
+                  if($barang[3] == 1)
+                  {
+                     echo "<td><a href='logic/pinjam.php?id_barang=$barang[0]&id_user=$_SESSION[id_user]'>pinjam</a></td>";
+                  }
                }
                else
                {

@@ -26,6 +26,7 @@
    if($exec->rowCount() > 0)
    {
       $_SESSION['username'] = $data['nama_user'];
+      $_SESSION['id_user'] = $data['id_user'];
       if($data['nama_user'] == $admin)
       {
             $_SESSION['admin'] = true;

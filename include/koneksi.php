@@ -3,7 +3,7 @@
    $username = "root";
    $password = "";
    $dbname = "geymasdb";
-   $admin = "anas";
+   $admin = "admin";
 
    $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, $password);
 

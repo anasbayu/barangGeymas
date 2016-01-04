@@ -30,6 +30,6 @@
          <textarea name="alamat" placeholder="alamat"></textarea><br>
          <button>Daftar</button>
       </form>
-      <span>Sudah punya akun? <b><a href="loginForm.php">daftar sekarang!</a></n></span>
+      <span>Sudah punya akun? <b><a href="loginForm.php">masuk sekarang!</a></n></span>
    </body>
 </html>

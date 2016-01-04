@@ -1,0 +1,178 @@
+body {
+    background: #E3E4E5;
+    font-size: .875em;
+}
+
+input,
+textarea {
+    background: #f5f5f5;
+    color: #383838;
+	border: solid 1px rgba(200, 200, 200, 0.75);
+}
+
+input:focus,
+textarea:focus {
+    background: #fff;
+	outline: none;
+	border: solid 1px #25729d;
+}
+
+/*  ==================================================
+    General Elements
+    ==================================================  */
+
+.main-header {
+    background: #25729d;
+    color: #F5F5F5;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+    .main-nav {
+
+    }
+        .main-nav li {
+            list-style: none;
+            display: inline-block;
+            padding: 5px;
+            float: left;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+        .main-nav li:hover {
+            border-bottom: 1px solid #F5F5F5;
+        }
+        .main-nav li[class="keluar"] {
+            float: right;
+        }
+            .main-nav li a {
+                text-decoration: none;
+                color: #F5F5F5;
+            }
+
+        .selected-item {
+            border-bottom: 1px solid #F5F5F5;
+        }
+
+.main-content {
+    background: #FFFFFF;
+    color: #383838;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    clear: both;
+}
+
+    .form-login,
+    .form-tambah {
+        background: #FFFFFF;
+        margin-top: 150px;
+        padding: 0;
+        /*border-radius: 5px;*/
+        box-shadow: 0 0 1em #383838;
+    }
+    .form-tambah {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        clear: both;
+        display: table;
+    }
+        .form-title,
+        .form-login label,
+        .form-login input,
+        .form-login button,
+        .form-tambah label,
+        .form-tambah input,
+        .form-tambah button {
+            display: block;
+            width: 100%;
+            float: left;
+            margin-bottom: 10px;
+        }
+        .form-title {
+            background: #F3F3F3;
+            color: #383838;
+            border-bottom: 1px solid #CFCFCF;
+            margin-bottom: 0;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            text-align: center;
+            font-weight: bold;
+        }
+        .form-body {
+            padding: 20px;
+            clear: both;
+        }
+        .form-input {
+            padding: 5px;
+        }
+        .form-login button,
+        .form-tambah button {
+            border: none;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background: #11BD4A;
+            color: #F5F5F5;
+            font-weight: bold;
+        }
+        .form-tambah button {
+            margin-bottom: 20px;
+        }
+        .form-login span {
+            font-size: 0.8em;
+            text-align: center;
+            display: block;
+            padding: 0;
+            clear: both;
+        }
+        .form-login span a {
+            text-decoration: underline;
+            color: #25729d;
+            font-weight: bold;
+        }
+
+    .welcome-message {
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .tabel-barang {
+        /*border: 1px solid #25729d;*/
+        display: table;
+        width: 100%;
+    }
+        .tabel-barang th,
+        .tabel-barang td {
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-left: 8px;
+            padding-right: 8px;
+            /*border: 1px solid #D5D5D5;*/
+            cursor: default;
+        }
+        .tabel-barang th {
+            /*padding-top: 10px;
+            padding-bottom: 10px;*/
+            background: #25729d;
+            font-weight: bold;
+            color: #F5F5F5;
+            text-align: left;
+        }
+        .tabel-barang td {
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .tabel-barang tr:nth-child(even) {
+            background: #F9F9F9;
+        }
+        .tabel-barang tr:nth-child(odd) {
+            background: #D3E3EB;
+            /*background: rgba(37, 114, 157, 0.3);*/
+        }
+        .tabel-barang tr:hover {
+            background: #BDD4E1;
+        }
+            .tabel-barang td a {
+                color: #25729d;
+            }

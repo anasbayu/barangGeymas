@@ -1,6 +1,17 @@
+@font-face {
+	font-family: 'Iceberg';
+	src: url('fonts/Iceberg/Iceberg-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Ropa_Sans';
+	src: url('fonts/Ropa_Sans/RopaSans-Regular.ttf');
+}
+
 body {
     background: #E3E4E5;
-    font-size: .875em;
+    font-size: .975em;
+    font-family: "Ropa_Sans";
 }
 
 input,
@@ -29,6 +40,7 @@ textarea:focus {
     padding-bottom: 20px;
     margin-top: 20px;
     margin-bottom: 20px;
+    /*font-family: Iceberg;*/
 }
     .main-nav {
 
@@ -77,6 +89,8 @@ textarea:focus {
         margin-bottom: 20px;
         clear: both;
         display: table;
+        box-shadow: 0 0 0;
+        border: 1px solid #CFCFCF;
     }
         .form-title,
         .form-login label,
@@ -84,11 +98,15 @@ textarea:focus {
         .form-login button,
         .form-tambah label,
         .form-tambah input,
+        .form-tambah select,
         .form-tambah button {
             display: block;
             width: 100%;
             float: left;
             margin-bottom: 10px;
+        }
+        .form-tambah label {
+            margin-bottom: 5px;
         }
         .form-title {
             background: #F3F3F3;
@@ -104,7 +122,8 @@ textarea:focus {
             padding: 20px;
             clear: both;
         }
-        .form-input {
+        .form-input,
+        .form-select {
             padding: 5px;
         }
         .form-login button,
@@ -176,3 +195,52 @@ textarea:focus {
             .tabel-barang td a {
                 color: #25729d;
             }
+
+.main-footer {
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid #25729d;
+    color: #383838;
+    /*font-family: Iceberg;*/
+}
+    .footer-kiri {
+        text-align: left;
+    }
+    .footer-tengah {
+        text-align: center;
+        margin: auto;
+        float: left;
+        width: 100%;
+        /*background: rgb(176, 252, 95);*/
+    }
+        .footer-tengah li {
+            display: inline-block;
+            float: left;
+            margin: auto;
+            text-align: center;
+            margin-right: 5px;
+        }
+    .footer-kanan {
+        text-align: right;
+    }
+    .main-footer a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+/*  ==================================================
+    Medium Devices
+    ==================================================  */
+
+@media (max-width: 768px) {
+    .footer-kiri,
+    .footer-tengah,
+    .footer-kanan {
+        text-align: center;
+        float: none;
+    }
+        .footer-tengah li {
+            float: none;
+        }
+}

@@ -10,6 +10,7 @@
         <link type="text/css" rel="stylesheet" href="css/normalize.css"/>
         <link type="text/css" rel="stylesheet" href="css/grid.css"/>
         <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <link rel="shortcut icon" href="img/icon.svg"/>
     </head>
     <body>
         <div class="grid-container main-header">
@@ -38,7 +39,7 @@
                     <div class="form-body">
                         <form method="post" action="logic/tambahBarang.php">
                             <label for="nama_barang">Nama barang</label>
-                            <input class="form-input" type="text" maxlength="25" placeholder="nama barang" name="nama_barang" required autofocus/><br>
+                            <input class="form-input" type="text" maxlength="25" placeholder="nama barang" name="nama_barang" required autofocus/>
 
                             <button type="submit">Tambah</button>
                         </form>
@@ -59,5 +60,7 @@
                 </div>
             </div> -->
         </div>
+
+        <?php include 'include/footer.php' ?>
     </body>
 </html>

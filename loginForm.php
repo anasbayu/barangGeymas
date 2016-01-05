@@ -5,6 +5,7 @@
         <link type="text/css" rel="stylesheet" href="css/normalize.css"/>
         <link type="text/css" rel="stylesheet" href="css/grid.css"/>
         <link type="text/css" rel="stylesheet" href="css/style.css"/>
+        <link rel="shortcut icon" href="img/icon.svg"/>
     </head>
     <body>
         <div class="grid-container">

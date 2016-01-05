@@ -76,10 +76,14 @@
                             } else {
                                 echo "
                                     <td>
-                                       <a href='editForm.php?nama_barang=$barang[1]&status_barang=$barang[3]&id_barang=$barang[0]'>
+                                       <a href='editForm.php?nama_barang=$barang[1]&id_barang=$barang[0]'>
                                        Ubah</a> |
                                        <a href='logic/hapus.php?id_barang=$barang[0]'>Hapus</a>
                                 ";
+
+                                if($barang[3] == 2) {
+                                  echo "| <a href='logic/kembali.php?id_barang=$barang[0]'>Kembali</a>";
+                                }
 
                                 if($barang[3] == 3) {
                                    echo " | <a href='logic/setujui.php?id_barang=$barang[0]&id_status=2'>Setujui</a>

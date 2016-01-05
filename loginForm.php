@@ -6,6 +6,7 @@
         <link type="text/css" rel="stylesheet" href="css/grid.css"/>
         <link type="text/css" rel="stylesheet" href="css/style.css"/>
         <link rel="shortcut icon" href="img/icon.svg"/>
+        <meta name="viewport" content="width=device-width">
     </head>
     <body>
         <div class="grid-container">
